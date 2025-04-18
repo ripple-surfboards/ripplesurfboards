@@ -1,48 +1,59 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ripple Surfboards</title>
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <script src="js/script.js" defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/alpinejs" defer></script>
 </head>
-<body>
-  <header>
-    <nav class="navbar">
-      <a href="index.html" class="logo">
-        <img src="images/logo.png" alt="Ripple Surfboards Logo" />
-      </a>
-      <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
-      <ul class="nav-links">
-        <li><a href="about.html">About</a></li>
-        <li><a href="boards.html">Boards</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+<body class="bg-white text-gray-800">
+
+  <header class="bg-blue-50 shadow">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-blue-800">Ripple Surfboards</h1>
+      <nav class="space-x-4">
+        <a href="#" class="text-blue-600 hover:text-blue-800">Boards</a>
+        <a href="#" class="text-blue-600 hover:text-blue-800">Our Story</a>
+        <a href="#" class="text-blue-600 hover:text-blue-800">Social</a>
+        <a href="#" class="text-blue-600 hover:text-blue-800">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <section class="hero">
-    <img src="images/hero.jpg" alt="Surfboards on the beach" />
-    <div class="hero-text">
-      <h1>Ripple Surfboards</h1>
-      <p>Handcrafted in Leucadia, California</p>
+  <section class="relative bg-cover bg-center h-screen" style="background-image: url('images/hero.jpg');">
+    <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center text-white text-center">
+      <h2 class="text-5xl font-bold mb-4">Crafted for the Soul Surfer</h2>
+      <p class="text-xl mb-6">Custom boards. Classic vibes. Shaped in Leucadia.</p>
+      <a href="#" class="bg-white text-blue-800 px-6 py-3 rounded shadow hover:bg-blue-100 transition">Explore Boards</a>
     </div>
   </section>
 
-  <section class="intro">
-    <div class="container">
-      <h2>Classic Shapes, Timeless Style</h2>
-      <p>Welcome to Ripple Surfboards — family-owned, California-crafted custom boards. From the 60s-inspired "Flowerchild" to the bold "Jolly Roger," each board tells a story. Made with love, right here in SoCal.</p>
+  <section class="py-16 bg-white text-center">
+    <h2 class="text-3xl font-semibold mb-6">Featured Boards</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto px-4">
+      <div class="bg-blue-50 p-4 rounded shadow hover:shadow-lg transition">
+        <img src="images/flowerchild.jpg" alt="Flowerchild Board" class="mb-4 rounded">
+        <h3 class="text-xl font-bold">Flowerchild</h3>
+        <p>A smooth-riding 9'0" noserider with soul.</p>
+      </div>
+      <div class="bg-blue-50 p-4 rounded shadow hover:shadow-lg transition">
+        <img src="images/jollyroger.jpg" alt="Jolly Roger Board" class="mb-4 rounded">
+        <h3 class="text-xl font-bold">Jolly Roger</h3>
+        <p>Midlength mischief meets high-speed control.</p>
+      </div>
+      <div class="bg-blue-50 p-4 rounded shadow hover:shadow-lg transition">
+        <img src="images/leucadian.jpg" alt="The Leucadian Board" class="mb-4 rounded">
+        <h3 class="text-xl font-bold">The Leucadian</h3>
+        <p>Fishy, fast, and made for beach breaks.</p>
+      </div>
     </div>
   </section>
 
-  <footer>
-    <div class="footer-content">
-      <p>&copy; 2025 Ripple Surfboards. All rights reserved.</p>
-      <p><a href="mailto:info@ripplesurfboards.com">info@ripplesurfboards.com</a></p>
-    </div>
+  <footer class="bg-blue-50 text-center py-6 mt-16">
+    <p class="text-gray-600">&copy; 2025 Ripple Surfboards · Handcrafted in SoCal</p>
   </footer>
+
 </body>
 </html>

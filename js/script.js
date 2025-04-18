@@ -1,10 +1,10 @@
-// script.js
 
-document.addEventListener("DOMContentLoaded", function () {
-  const toggle = document.querySelector(".menu-toggle");
-  const navLinks = document.querySelector(".nav-links");
-
-  toggle.addEventListener("click", function () {
-    navLinks.classList.toggle("active");
-  });
+document.addEventListener('DOMContentLoaded', () => {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+  if (menuToggle && navLinks) {
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('hidden');
+    });
+  }
 });
